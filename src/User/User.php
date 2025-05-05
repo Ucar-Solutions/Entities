@@ -22,7 +22,6 @@ declare(strict_types=1);
 namespace UcarSolutions\Entities\User;
 
 use DateTimeInterface;
-use doganoo\DI\Entity\User\UserInterface;
 use doganoo\PHPAlgorithms\Datastructure\Table\HashTable;
 
 final readonly class User implements UserInterface
