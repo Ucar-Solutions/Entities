@@ -1,7 +1,5 @@
 <?php
 declare(strict_types=1);
-
-namespace UcarSolutions\Entities\Common;
 /**
  * Entities
  *
@@ -21,9 +19,40 @@ namespace UcarSolutions\Entities\Common;
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-use JsonSerializable;
+namespace UcarSolutions\Entities\Random;
 
-interface JsonEntityInterface extends EntityInterface, JsonSerializable
+use DateTimeInterface;
+
+final readonly class EmailCollect
 {
+
+    public function __construct(
+        private string            $id,
+        private string            $email,
+        private array             $payload,
+        private DateTimeInterface $createTs
+    )
+    {
+    }
+
+    public function getId(): string
+    {
+        return $this->id;
+    }
+
+    public function getEmail(): string
+    {
+        return $this->email;
+    }
+
+    public function getPayload(): array
+    {
+        return $this->payload;
+    }
+
+    public function getCreateTs(): DateTimeInterface
+    {
+        return $this->createTs;
+    }
 
 }

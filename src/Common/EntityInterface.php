@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace UcarSolutions\Entities\Common;
 /**
- * DIServices
+ * Entities
  *
  * Copyright (C) <2025> <Dogan Ucar>
  *
