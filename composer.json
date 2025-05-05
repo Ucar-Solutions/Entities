@@ -1,0 +1,22 @@
+{
+  "name": "ucarsolutions/entities",
+  "description": "A collection of commonly used entities",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "UcarSolutions\\Entities\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Dogan Ucar",
+      "email": "dogan@dogan-ucar.de"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">8.1",
+    "doganoo/php-algorithms": "^2.1"
+  }
+}

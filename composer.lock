@@ -1,0 +1,133 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "10d3a1b7ad36e7995b9231167a540c57",
+    "packages": [
+        {
+            "name": "doganoo/php-algorithms",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doganoo/PHPAlgorithms.git",
+                "reference": "1b6c3ac3448289b103d92bc75c2c7c4974eceae8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doganoo/PHPAlgorithms/zipball/1b6c3ac3448289b103d92bc75c2c7c4974eceae8",
+                "reference": "1b6c3ac3448289b103d92bc75c2c7c4974eceae8",
+                "shasum": ""
+            },
+            "require": {
+                "doganoo/php-util": "0.5.*",
+                "ext-json": "*",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "ergebnis/composer-normalize": "^2.9",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpstan/phpstan": "^0.12.54",
+                "phpunit/phpunit": "^8.0",
+                "roave/security-advisories": "dev-latest",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "doganoo\\PHPAlgorithms\\": "src/",
+                    "doganoo\\PHPAlgorithmsTest\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dogan Ucar",
+                    "email": "dogan@dogan-ucar.de",
+                    "homepage": "https://www.dogan-ucar.de"
+                }
+            ],
+            "description": "A collection of common algorithms implemented in PHP. The collection is based on \"Cracking the Coding Interview\" by Gayle Laakmann McDowell",
+            "homepage": "https://www.dogan-ucar.de/phpalgorithms-2/",
+            "keywords": [
+                "algorithms",
+                "data structures"
+            ],
+            "support": {
+                "issues": "https://github.com/doganoo/PHPAlgorithms/issues",
+                "source": "https://github.com/doganoo/PHPAlgorithms/tree/2.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/doganoo",
+                    "type": "custom"
+                }
+            ],
+            "time": "2023-05-28T10:12:23+00:00"
+        },
+        {
+            "name": "doganoo/php-util",
+            "version": "0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doganoo/PHPUtil.git",
+                "reference": "f8ce213c221e1a35b45479a4336027c8cd20c6cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doganoo/PHPUtil/zipball/f8ce213c221e1a35b45479a4336027c8cd20c6cc",
+                "reference": "f8ce213c221e1a35b45479a4336027c8cd20c6cc",
+                "shasum": ""
+            },
+            "require": {
+                "doganoo/php-algorithms": "*",
+                "ext-fileinfo": "*",
+                "ext-iconv": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-pdo": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "doganoo\\PHPUtil\\": "src/",
+                    "doganoo\\PHPUtil\\Test\\": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dogan Ucar",
+                    "email": "dogan@dogan-ucar.de"
+                }
+            ],
+            "description": "A collection of common classes and methods that I am usually working with",
+            "support": {
+                "issues": "https://github.com/doganoo/PHPUtil/issues",
+                "source": "https://github.com/doganoo/PHPUtil/tree/0.5.0"
+            },
+            "time": "2021-09-11T07:04:55+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">8.1"
+    },
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}
