@@ -11,6 +11,5 @@ enum Route: string
     case METHOD = 'method';
     case NAME = 'name';
     case OPTIONS = 'options';
-    case PATCH = 'patch';
 
 }
