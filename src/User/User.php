@@ -24,7 +24,7 @@ namespace UcarSolutions\Entities\User;
 use DateTimeInterface;
 use doganoo\PHPAlgorithms\Datastructure\Table\HashTable;
 
-final readonly class User implements UserInterface
+readonly class User implements UserInterface
 {
 
     public function __construct(
@@ -33,7 +33,7 @@ final readonly class User implements UserInterface
         private string            $email,
         private string            $password,
         private string            $token,
-        private string            $status,
+        private Status            $status,
         private HashTable         $roles,
         private DateTimeInterface $createTs,
     )
@@ -65,7 +65,7 @@ final readonly class User implements UserInterface
         return $this->token;
     }
 
-    public function getStatus(): string
+    public function getStatus(): Status
     {
         return $this->status;
     }
