@@ -3,10 +3,9 @@ declare(strict_types=1);
 
 namespace UcarSolutions\Entities\User;
 
-enum Status
+enum Status: string
 {
-
-    case ENABLED;
-    case DISABLED;
+    case ENABLED = 'enabled';
+    case DISABLED = 'disabled';
 
 }
