@@ -89,7 +89,7 @@ readonly class User implements UserInterface
             'password' => $this->getPassword(),
             'token' => $this->getToken(),
             'status' => $this->getStatus(),
-            'roles' => $this->getRoles(),
+            'roles' => $this->getRoles()->toArray(),
             'createTs' => $this->getCreateTs(),
         ];
     }
