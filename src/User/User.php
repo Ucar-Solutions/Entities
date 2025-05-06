@@ -22,7 +22,7 @@ declare(strict_types=1);
 namespace UcarSolutions\Entities\User;
 
 use DateTimeInterface;
-use doganoo\PHPAlgorithms\Datastructure\Table\HashTable;
+use UcarSolutions\Entities\User\Rbac\PermissionInterface;
 
 readonly class User implements UserInterface
 {
@@ -34,7 +34,10 @@ readonly class User implements UserInterface
         private string            $password,
         private string            $token,
         private Status            $status,
-        private HashTable         $roles,
+        /**
+         * @var array<int, PermissionInterface>
+         */
+        private array             $permissions,
         private DateTimeInterface $createTs,
     )
     {
@@ -70,14 +73,17 @@ readonly class User implements UserInterface
         return $this->status;
     }
 
-    public function getRoles(): HashTable
-    {
-        return $this->roles;
-    }
-
     public function getCreateTs(): DateTimeInterface
     {
         return $this->createTs;
+    }
+
+    /**
+     * @return array<int, PermissionInterface>
+     */
+    public function getPermissions(): array
+    {
+        return $this->permissions;
     }
 
     public function jsonSerialize(): array
@@ -89,7 +95,7 @@ readonly class User implements UserInterface
             'password' => $this->getPassword(),
             'token' => $this->getToken(),
             'status' => $this->getStatus(),
-            'roles' => $this->getRoles()->toArray(),
+            'permissions' => $this->getPermissions(),
             'createTs' => $this->getCreateTs(),
         ];
     }

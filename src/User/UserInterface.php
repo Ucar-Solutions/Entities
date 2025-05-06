@@ -22,14 +22,17 @@ namespace UcarSolutions\Entities\User;
  */
 
 use DateTimeInterface;
-use doganoo\PHPAlgorithms\Datastructure\Table\HashTable;
 use UcarSolutions\Entities\Common\JsonEntityInterface;
+use UcarSolutions\Entities\User\Rbac\PermissionInterface;
 
 interface UserInterface extends JsonEntityInterface
 {
     public function getId(): string;
 
-    public function getRoles(): HashTable;
+    /**
+     * @return array<int, PermissionInterface>
+     */
+    public function getPermissions(): array;
 
     public function getName(): string;
 

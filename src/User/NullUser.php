@@ -4,7 +4,6 @@ declare(strict_types=1);
 namespace UcarSolutions\Entities\User;
 
 use DateTimeImmutable;
-use doganoo\PHPAlgorithms\Datastructure\Table\HashTable;
 
 final readonly class NullUser extends User
 {
@@ -18,7 +17,7 @@ final readonly class NullUser extends User
             "",
             "",
             Status::DISABLED,
-            new HashTable(),
+            [],
             new DateTimeImmutable()
         );
     }
