@@ -50,7 +50,7 @@ final readonly class Role implements RoleInterface
             "id" => $this->getId(),
             "name" => $this->getName(),
             "createTs" => $this->getCreateTs(),
-            'permissions' => $this->getPermissions(),
+            'permissions' => $this->getPermissions()->toArray(),
         ];
     }
 }
