@@ -33,8 +33,8 @@ use doganoo\PHPAlgorithms\Datastructure\Table\HashTable;
 interface RoleInterface extends IComparable
 {
 
-    public const int DEFAULT = 1;
-    public const string DEFAULT_NAME = 'DEFAULT';
+    public const DEFAULT = 1;
+    public const DEFAULT_NAME = 'DEFAULT';
 
     public function getId(): string;
 
