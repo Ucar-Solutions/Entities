@@ -36,4 +36,12 @@ final readonly class Permission implements PermissionInterface
         return $this->createTs;
     }
 
+    public function jsonSerialize(): array
+    {
+        return [
+            "id" => $this->getId(),
+            "name" => $this->getName(),
+            "createTs" => $this->getCreateTs(),
+        ];
+    }
 }

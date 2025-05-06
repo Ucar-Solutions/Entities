@@ -44,4 +44,13 @@ final readonly class Role implements RoleInterface
     }
 
 
+    public function jsonSerialize(): array
+    {
+        return [
+            "id" => $this->getId(),
+            "name" => $this->getName(),
+            "createTs" => $this->getCreateTs(),
+            'permissions' => $this->getPermissions(),
+        ];
+    }
 }

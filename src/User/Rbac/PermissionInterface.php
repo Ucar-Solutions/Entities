@@ -24,13 +24,14 @@ namespace UcarSolutions\Entities\User\Rbac;
 
 use DateTimeInterface;
 use doganoo\PHPAlgorithms\Common\Interfaces\IComparable;
+use UcarSolutions\Entities\Common\JsonEntityInterface;
 
 /**
  * Interface IPermission
  *
  * @package doganoo\SimpleRbac\Common
  */
-interface PermissionInterface extends IComparable
+interface PermissionInterface extends IComparable, JsonEntityInterface
 {
 
     public const DEFAULT = 1;

@@ -29,8 +29,9 @@ namespace UcarSolutions\Entities\User\Rbac;
 use DateTimeInterface;
 use doganoo\PHPAlgorithms\Common\Interfaces\IComparable;
 use doganoo\PHPAlgorithms\Datastructure\Table\HashTable;
+use UcarSolutions\Entities\Common\JsonEntityInterface;
 
-interface RoleInterface extends IComparable
+interface RoleInterface extends IComparable, JsonEntityInterface
 {
 
     public const DEFAULT = 1;
