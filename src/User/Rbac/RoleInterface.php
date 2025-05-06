@@ -30,35 +30,18 @@ use DateTimeInterface;
 use doganoo\PHPAlgorithms\Common\Interfaces\IComparable;
 use doganoo\PHPAlgorithms\Datastructure\Table\HashTable;
 
-/**
- * Interface IRole
- *
- * @package doganoo\SimpleRbac\Common
- */
 interface RoleInterface extends IComparable
 {
 
     public const int DEFAULT = 1;
     public const string DEFAULT_NAME = 'DEFAULT';
 
-    /**
-     * @return int
-     */
-    public function getId(): int;
+    public function getId(): string;
 
-    /**
-     * @return string
-     */
     public function getName(): string;
 
-    /**
-     * @return HashTable
-     */
     public function getPermissions(): HashTable;
 
-    /**
-     * @return DateTimeInterface
-     */
     public function getCreateTs(): DateTimeInterface;
 
 }

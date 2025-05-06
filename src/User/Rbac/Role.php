@@ -10,7 +10,7 @@ final readonly class Role implements RoleInterface
 {
 
     public function __construct(
-        private int               $id,
+        private string            $id,
         private string            $name,
         private HashTable         $permissions,
         private DateTimeInterface $createTs,
@@ -23,7 +23,7 @@ final readonly class Role implements RoleInterface
         return 0;
     }
 
-    public function getId(): int
+    public function getId(): string
     {
         return $this->id;
     }

@@ -9,7 +9,7 @@ final readonly class Permission implements PermissionInterface
 {
 
     public function __construct(
-        private int               $id,
+        private string            $id,
         private string            $name,
         private DateTimeInterface $createTs,
     )
@@ -18,13 +18,10 @@ final readonly class Permission implements PermissionInterface
 
     public function compareTo($object): int
     {
-        if (!($object instanceof PermissionInterface)) {
-            return false;
-        }
-        return true;
+        return 0;
     }
 
-    public function getId(): int
+    public function getId(): string
     {
         return $this->id;
     }

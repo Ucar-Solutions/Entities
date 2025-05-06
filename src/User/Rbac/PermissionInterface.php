@@ -36,19 +36,10 @@ interface PermissionInterface extends IComparable
     public const int DEFAULT = 1;
     public const string DEFAULT_NAME = 'DEFAULT';
 
-    /**
-     * @return int
-     */
-    public function getId(): int;
+    public function getId(): string;
 
-    /**
-     * @return string
-     */
     public function getName(): string;
 
-    /**
-     * @return DateTimeInterface
-     */
     public function getCreateTs(): DateTimeInterface;
 
 }
