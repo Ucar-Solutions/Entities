@@ -34,6 +34,7 @@ readonly class User implements UserInterface
         private string            $password,
         private string            $token,
         private Status            $status,
+        private Subscription      $subscription,
         /**
          * @var array<int, PermissionInterface>
          */
@@ -86,6 +87,14 @@ readonly class User implements UserInterface
         return $this->permissions;
     }
 
+    /**
+     * @return Subscription
+     */
+    public function getSubscription(): Subscription
+    {
+        return $this->subscription;
+    }
+
     public function jsonSerialize(): array
     {
         return [
@@ -95,6 +104,7 @@ readonly class User implements UserInterface
             'password' => $this->getPassword(),
             'token' => $this->getToken(),
             'status' => $this->getStatus(),
+            'subscription' => $this->getSubscription(),
             'permissions' => $this->getPermissions(),
             'createTs' => $this->getCreateTs(),
         ];

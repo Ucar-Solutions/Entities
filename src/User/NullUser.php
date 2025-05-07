@@ -11,14 +11,15 @@ final readonly class NullUser extends User
     public function __construct()
     {
         parent::__construct(
-            "",
-            "",
-            "",
-            "",
-            "",
-            Status::DISABLED,
-            [],
-            new DateTimeImmutable()
+            id: "",
+            name: "",
+            email: "",
+            password: "",
+            token: "",
+            status: Status::DISABLED,
+            subscription: Subscription::PAID,
+            permissions: [],
+            createTs: new DateTimeImmutable()
         );
     }
 
