@@ -46,4 +46,6 @@ interface UserInterface extends JsonEntityInterface
 
     public function getStatus(): Status;
 
+    public function getSubscription(): Subscription;
+
 }
