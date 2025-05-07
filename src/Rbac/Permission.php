@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace UcarSolutions\Entities\User\Rbac;
+namespace UcarSolutions\Entities\Rbac;
 
 use DateTimeInterface;
 

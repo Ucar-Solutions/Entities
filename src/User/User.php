@@ -22,7 +22,7 @@ declare(strict_types=1);
 namespace UcarSolutions\Entities\User;
 
 use DateTimeInterface;
-use UcarSolutions\Entities\User\Rbac\PermissionInterface;
+use UcarSolutions\Entities\Rbac\PermissionInterface;
 
 readonly class User implements UserInterface
 {

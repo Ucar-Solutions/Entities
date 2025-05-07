@@ -23,7 +23,7 @@ namespace UcarSolutions\Entities\User;
 
 use DateTimeInterface;
 use UcarSolutions\Entities\Common\JsonEntityInterface;
-use UcarSolutions\Entities\User\Rbac\PermissionInterface;
+use UcarSolutions\Entities\Rbac\PermissionInterface;
 
 interface UserInterface extends JsonEntityInterface
 {

@@ -24,7 +24,7 @@ declare(strict_types=1);
  * SOFTWARE.
  */
 
-namespace UcarSolutions\Entities\User\Rbac;
+namespace UcarSolutions\Entities\Rbac;
 
 use DateTimeInterface;
 use doganoo\PHPAlgorithms\Common\Interfaces\IComparable;
