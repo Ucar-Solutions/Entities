@@ -3,12 +3,14 @@ declare(strict_types=1);
 
 namespace UcarSolutions\Entities\Organization;
 
+use DateTimeInterface;
+
 final readonly class Organization implements OrganizationInterface
 {
     public function __construct(
-        private string             $id,
-        private string             $name,
-        private \DateTimeInterface $createTs,
+        private string            $id,
+        private string            $name,
+        private DateTimeInterface $createTs,
     )
     {
     }
@@ -23,8 +25,17 @@ final readonly class Organization implements OrganizationInterface
         return $this->name;
     }
 
-    public function getCreateTs(): \DateTimeInterface
+    public function getCreateTs(): DateTimeInterface
     {
         return $this->createTs;
+    }
+
+    public function jsonSerialize(): array
+    {
+        return [
+            'id' => $this->getId(),
+            'name' => $this->getName(),
+            'createTs' => $this->getCreateTs(),
+        ];
     }
 }
