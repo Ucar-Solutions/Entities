@@ -5,7 +5,7 @@ namespace UcarSolutions\Entities\Organization;
 
 use DateTimeInterface;
 
-final readonly class Organization implements OrganizationInterface
+readonly class Organization implements OrganizationInterface
 {
     public function __construct(
         private string            $id,
